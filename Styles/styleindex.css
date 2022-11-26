@@ -1,0 +1,87 @@
+body{
+	background-color: grey;
+	background-image: url("../images/photo1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: Verdana;
+	margin: 0px;
+	padding: 0px;
+}
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+nav li{
+	list-style-type: none;
+}
+.sous-menu{
+	display: none;
+	position: relative;
+}
+nav input[type=checkbox]{
+	display: none;
+}
+.menu-mobile{
+	display: none;
+}
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav a{
+	display:inline-block;
+	text-decoration: none;
+}
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+nav li:hover .sous-menu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 10000;
+}
+.sous-menu li{
+	border-bottom: 1px solid #CCC;
+}
+.sous-menu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #FFF;
+	width: 270px;
+}
+.menu:hover{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+}
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+.menu .sous-menu{
+	background-color: rgb(230, 100, 40);
+}
+.sous-menu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+.menu .sous-menu li:hover{
+	background-color: rgb(210, 77, 60);
+}
+audio{
+	position: relative;
+	margin-left: 84%;
+	margin-top:45%;
+	color: black;
+}
